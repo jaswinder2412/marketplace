@@ -1,0 +1,602 @@
+
+
+
+
+
+
+
+
+
+
+
+info [Tue Jul 19 2022 19:40:59 GMT-0400 (Eastern Daylight Saving Time)]  Error Hello
+
+
+
+
+
+
+
+
+info [Tue Jul 19 2022 19:41:31 GMT-0400 (Eastern Daylight Saving Time)]  Error ReferenceError: usedLike is not defined
+    at productController.createProduct (/Users/jaswindersingh/marketplace/controller/productController.js:60:145)
+    at /Users/jaswindersingh/marketplace/routes/productrouter.js:14:43
+    at /Users/jaswindersingh/marketplace/routes/productrouter.js:16:7
+    at Layer.handle [as handle_request] (/Users/jaswindersingh/marketplace/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/jaswindersingh/marketplace/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/Users/jaswindersingh/marketplace/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/Users/jaswindersingh/marketplace/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/jaswindersingh/marketplace/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/Users/jaswindersingh/marketplace/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/jaswindersingh/marketplace/node_modules/express/lib/router/index.js:280:10)
+
+
+
+
+info [Tue Jul 19 2022 19:42:58 GMT-0400 (Eastern Daylight Saving Time)]  Error Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'INSERTs INTO `products`( `addedByUserId`, `productTitle`, `companyName`, `descri' at line 1
+    at Query.Sequence._packetToError (/Users/jaswindersingh/marketplace/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Query.ErrorPacket (/Users/jaswindersingh/marketplace/node_modules/mysql/lib/protocol/sequences/Query.js:79:18)
+    at Protocol._parsePacket (/Users/jaswindersingh/marketplace/node_modules/mysql/lib/protocol/Protocol.js:291:23)
+    at Parser._parsePacket (/Users/jaswindersingh/marketplace/node_modules/mysql/lib/protocol/Parser.js:433:10)
+    at Parser.write (/Users/jaswindersingh/marketplace/node_modules/mysql/lib/protocol/Parser.js:43:10)
+    at Protocol.write (/Users/jaswindersingh/marketplace/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/Users/jaswindersingh/marketplace/node_modules/mysql/lib/Connection.js:88:28)
+    at Socket.<anonymous> (/Users/jaswindersingh/marketplace/node_modules/mysql/lib/Connection.js:526:10)
+    at Socket.emit (node:events:527:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    --------------------
+    at Pool.query (/Users/jaswindersingh/marketplace/node_modules/mysql/lib/Pool.js:199:23)
+    at /Users/jaswindersingh/marketplace/model/Db.js:20:23
+    at new Promise (<anonymous>)
+    at Db.mainQuery (/Users/jaswindersingh/marketplace/model/Db.js:19:16)
+    at productController.createProduct (/Users/jaswindersingh/marketplace/controller/productController.js:60:33)
+    at /Users/jaswindersingh/marketplace/routes/productrouter.js:14:43
+    at /Users/jaswindersingh/marketplace/routes/productrouter.js:16:7
+    at Layer.handle [as handle_request] (/Users/jaswindersingh/marketplace/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/jaswindersingh/marketplace/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/Users/jaswindersingh/marketplace/node_modules/express/lib/router/route.js:114:3) {
+  code: 'ER_PARSE_ERROR',
+  errno: 1064,
+  sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'INSERTs INTO `products`( `addedByUserId`, `productTitle`, `companyName`, `descri' at line 1",
+  sqlState: '42000',
+  index: 0,
+  sql: "INSERTs INTO `products`( `addedByUserId`, `productTitle`, `companyName`, `description`, `photo`, `qty`, `costPrice`, `sellingPrice`, `MrPrice`, `usedLike`, `modelName`, `specifications`) VALUES ('5','Samsung','Apple','Good','/var/ww.jpg','2','2500','2800','3000','1','Pro','M1 pro chip')"
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+info [Sat Jul 23 2022 18:22:17 GMT-0400 (Eastern Daylight Saving Time)]  Error Error: ER_BAD_NULL_ERROR: Column 'fname' cannot be null
+    at Query.Sequence._packetToError (/Users/jaswindersingh/marketplace/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Query.ErrorPacket (/Users/jaswindersingh/marketplace/node_modules/mysql/lib/protocol/sequences/Query.js:79:18)
+    at Protocol._parsePacket (/Users/jaswindersingh/marketplace/node_modules/mysql/lib/protocol/Protocol.js:291:23)
+    at Parser._parsePacket (/Users/jaswindersingh/marketplace/node_modules/mysql/lib/protocol/Parser.js:433:10)
+    at Parser.write (/Users/jaswindersingh/marketplace/node_modules/mysql/lib/protocol/Parser.js:43:10)
+    at Protocol.write (/Users/jaswindersingh/marketplace/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/Users/jaswindersingh/marketplace/node_modules/mysql/lib/Connection.js:88:28)
+    at Socket.<anonymous> (/Users/jaswindersingh/marketplace/node_modules/mysql/lib/Connection.js:526:10)
+    at Socket.emit (node:events:527:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    --------------------
+    at Pool.query (/Users/jaswindersingh/marketplace/node_modules/mysql/lib/Pool.js:199:23)
+    at /Users/jaswindersingh/marketplace/model/Db.js:20:23
+    at new Promise (<anonymous>)
+    at Db.mainQuery (/Users/jaswindersingh/marketplace/model/Db.js:19:16)
+    at meetuser.createmeetuser (/Users/jaswindersingh/marketplace/controller/meetuser.js:36:33)
+    at async /Users/jaswindersingh/marketplace/routes/userroutes.js:31:19 {
+  code: 'ER_BAD_NULL_ERROR',
+  errno: 1048,
+  sqlMessage: "Column 'fname' cannot be null",
+  sqlState: '23000',
+  index: 0,
+  sql: "INSERT INTO `meetgreetUser`(`fname`, `lname`, `email`, `password`) VALUES (NULL,NULL,'k@gmail.com','$2b$10$Mfy/qs03bn9XO3g/7PC5G.S./WAkc0Au7/0Xogk30I9E6.vEQj1kW')"
+}
+
+
+info [Sat Jul 23 2022 18:22:43 GMT-0400 (Eastern Daylight Saving Time)]  Error Error: ER_BAD_NULL_ERROR: Column 'fname' cannot be null
+    at Query.Sequence._packetToError (/Users/jaswindersingh/marketplace/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Query.ErrorPacket (/Users/jaswindersingh/marketplace/node_modules/mysql/lib/protocol/sequences/Query.js:79:18)
+    at Protocol._parsePacket (/Users/jaswindersingh/marketplace/node_modules/mysql/lib/protocol/Protocol.js:291:23)
+    at Parser._parsePacket (/Users/jaswindersingh/marketplace/node_modules/mysql/lib/protocol/Parser.js:433:10)
+    at Parser.write (/Users/jaswindersingh/marketplace/node_modules/mysql/lib/protocol/Parser.js:43:10)
+    at Protocol.write (/Users/jaswindersingh/marketplace/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/Users/jaswindersingh/marketplace/node_modules/mysql/lib/Connection.js:88:28)
+    at Socket.<anonymous> (/Users/jaswindersingh/marketplace/node_modules/mysql/lib/Connection.js:526:10)
+    at Socket.emit (node:events:527:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    --------------------
+    at Pool.query (/Users/jaswindersingh/marketplace/node_modules/mysql/lib/Pool.js:199:23)
+    at /Users/jaswindersingh/marketplace/model/Db.js:20:23
+    at new Promise (<anonymous>)
+    at Db.mainQuery (/Users/jaswindersingh/marketplace/model/Db.js:19:16)
+    at meetuser.createmeetuser (/Users/jaswindersingh/marketplace/controller/meetuser.js:36:33)
+    at async /Users/jaswindersingh/marketplace/routes/userroutes.js:31:19 {
+  code: 'ER_BAD_NULL_ERROR',
+  errno: 1048,
+  sqlMessage: "Column 'fname' cannot be null",
+  sqlState: '23000',
+  index: 0,
+  sql: "INSERT INTO `meetgreetUser`(`fname`, `lname`, `email`, `password`) VALUES (NULL,NULL,'k@gmail.com','$2b$10$mbJPvmsjiNA9xocSCrT0ze8gmEB8cppPr0Erfhypr9WU0FTwYYD.u')"
+}
+
+
+info [Sat Jul 23 2022 18:23:04 GMT-0400 (Eastern Daylight Saving Time)]  Error Error: ER_BAD_NULL_ERROR: Column 'fname' cannot be null
+    at Query.Sequence._packetToError (/Users/jaswindersingh/marketplace/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Query.ErrorPacket (/Users/jaswindersingh/marketplace/node_modules/mysql/lib/protocol/sequences/Query.js:79:18)
+    at Protocol._parsePacket (/Users/jaswindersingh/marketplace/node_modules/mysql/lib/protocol/Protocol.js:291:23)
+    at Parser._parsePacket (/Users/jaswindersingh/marketplace/node_modules/mysql/lib/protocol/Parser.js:433:10)
+    at Parser.write (/Users/jaswindersingh/marketplace/node_modules/mysql/lib/protocol/Parser.js:43:10)
+    at Protocol.write (/Users/jaswindersingh/marketplace/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/Users/jaswindersingh/marketplace/node_modules/mysql/lib/Connection.js:88:28)
+    at Socket.<anonymous> (/Users/jaswindersingh/marketplace/node_modules/mysql/lib/Connection.js:526:10)
+    at Socket.emit (node:events:527:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    --------------------
+    at Pool.query (/Users/jaswindersingh/marketplace/node_modules/mysql/lib/Pool.js:199:23)
+    at /Users/jaswindersingh/marketplace/model/Db.js:20:23
+    at new Promise (<anonymous>)
+    at Db.mainQuery (/Users/jaswindersingh/marketplace/model/Db.js:19:16)
+    at meetuser.createmeetuser (/Users/jaswindersingh/marketplace/controller/meetuser.js:36:33)
+    at async /Users/jaswindersingh/marketplace/routes/userroutes.js:31:19 {
+  code: 'ER_BAD_NULL_ERROR',
+  errno: 1048,
+  sqlMessage: "Column 'fname' cannot be null",
+  sqlState: '23000',
+  index: 0,
+  sql: "INSERT INTO `meetgreetUser`(`fname`, `lname`, `email`, `password`) VALUES (NULL,NULL,'k@gmail.com','$2b$10$YeuUlP8H5Ekv7YmLb7bKdO8vnyKqftEvu55PhW769jINP0mL4qpOC')"
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+info [Mon Jul 25 2022 17:24:43 GMT-0400 (Eastern Daylight Saving Time)]  Error Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+    at Query.Sequence._packetToError (/Users/jaswindersingh/marketplace/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Query.ErrorPacket (/Users/jaswindersingh/marketplace/node_modules/mysql/lib/protocol/sequences/Query.js:79:18)
+    at Protocol._parsePacket (/Users/jaswindersingh/marketplace/node_modules/mysql/lib/protocol/Protocol.js:291:23)
+    at Parser._parsePacket (/Users/jaswindersingh/marketplace/node_modules/mysql/lib/protocol/Parser.js:433:10)
+    at Parser.write (/Users/jaswindersingh/marketplace/node_modules/mysql/lib/protocol/Parser.js:43:10)
+    at Protocol.write (/Users/jaswindersingh/marketplace/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/Users/jaswindersingh/marketplace/node_modules/mysql/lib/Connection.js:88:28)
+    at Socket.<anonymous> (/Users/jaswindersingh/marketplace/node_modules/mysql/lib/Connection.js:526:10)
+    at Socket.emit (node:events:527:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    --------------------
+    at Pool.query (/Users/jaswindersingh/marketplace/node_modules/mysql/lib/Pool.js:199:23)
+    at /Users/jaswindersingh/marketplace/model/Db.js:20:23
+    at new Promise (<anonymous>)
+    at Db.mainQuery (/Users/jaswindersingh/marketplace/model/Db.js:19:16)
+    at meetuser.login (/Users/jaswindersingh/marketplace/controller/meetuser.js:54:33)
+    at /Users/jaswindersingh/marketplace/routes/userroutes.js:59:39
+    at /Users/jaswindersingh/marketplace/routes/userroutes.js:62:7
+    at Layer.handle [as handle_request] (/Users/jaswindersingh/marketplace/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/jaswindersingh/marketplace/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/Users/jaswindersingh/marketplace/node_modules/express/lib/router/route.js:114:3) {
+  code: 'ER_PARSE_ERROR',
+  errno: 1064,
+  sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1",
+  sqlState: '42000',
+  index: 0,
+  sql: 'SELECT * FROM `meetgreetUser` WHERE email='
+}
+info [Mon Jul 25 2022 17:24:51 GMT-0400 (Eastern Daylight Saving Time)]  Error Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+    at Query.Sequence._packetToError (/Users/jaswindersingh/marketplace/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Query.ErrorPacket (/Users/jaswindersingh/marketplace/node_modules/mysql/lib/protocol/sequences/Query.js:79:18)
+    at Protocol._parsePacket (/Users/jaswindersingh/marketplace/node_modules/mysql/lib/protocol/Protocol.js:291:23)
+    at Parser._parsePacket (/Users/jaswindersingh/marketplace/node_modules/mysql/lib/protocol/Parser.js:433:10)
+    at Parser.write (/Users/jaswindersingh/marketplace/node_modules/mysql/lib/protocol/Parser.js:43:10)
+    at Protocol.write (/Users/jaswindersingh/marketplace/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/Users/jaswindersingh/marketplace/node_modules/mysql/lib/Connection.js:88:28)
+    at Socket.<anonymous> (/Users/jaswindersingh/marketplace/node_modules/mysql/lib/Connection.js:526:10)
+    at Socket.emit (node:events:527:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    --------------------
+    at Pool.query (/Users/jaswindersingh/marketplace/node_modules/mysql/lib/Pool.js:199:23)
+    at /Users/jaswindersingh/marketplace/model/Db.js:20:23
+    at new Promise (<anonymous>)
+    at Db.mainQuery (/Users/jaswindersingh/marketplace/model/Db.js:19:16)
+    at meetuser.login (/Users/jaswindersingh/marketplace/controller/meetuser.js:54:33)
+    at /Users/jaswindersingh/marketplace/routes/userroutes.js:59:39
+    at /Users/jaswindersingh/marketplace/routes/userroutes.js:62:7
+    at Layer.handle [as handle_request] (/Users/jaswindersingh/marketplace/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/jaswindersingh/marketplace/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/Users/jaswindersingh/marketplace/node_modules/express/lib/router/route.js:114:3) {
+  code: 'ER_PARSE_ERROR',
+  errno: 1064,
+  sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1",
+  sqlState: '42000',
+  index: 0,
+  sql: 'SELECT * FROM `meetgreetUser` WHERE email='
+}
+
+
+
+
+
+
+info [Mon Jul 25 2022 17:27:10 GMT-0400 (Eastern Daylight Saving Time)]  Error Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+    at Query.Sequence._packetToError (/Users/jaswindersingh/marketplace/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Query.ErrorPacket (/Users/jaswindersingh/marketplace/node_modules/mysql/lib/protocol/sequences/Query.js:79:18)
+    at Protocol._parsePacket (/Users/jaswindersingh/marketplace/node_modules/mysql/lib/protocol/Protocol.js:291:23)
+    at Parser._parsePacket (/Users/jaswindersingh/marketplace/node_modules/mysql/lib/protocol/Parser.js:433:10)
+    at Parser.write (/Users/jaswindersingh/marketplace/node_modules/mysql/lib/protocol/Parser.js:43:10)
+    at Protocol.write (/Users/jaswindersingh/marketplace/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/Users/jaswindersingh/marketplace/node_modules/mysql/lib/Connection.js:88:28)
+    at Socket.<anonymous> (/Users/jaswindersingh/marketplace/node_modules/mysql/lib/Connection.js:526:10)
+    at Socket.emit (node:events:527:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    --------------------
+    at Pool.query (/Users/jaswindersingh/marketplace/node_modules/mysql/lib/Pool.js:199:23)
+    at /Users/jaswindersingh/marketplace/model/Db.js:20:23
+    at new Promise (<anonymous>)
+    at Db.mainQuery (/Users/jaswindersingh/marketplace/model/Db.js:19:16)
+    at meetuser.login (/Users/jaswindersingh/marketplace/controller/meetuser.js:54:33)
+    at /Users/jaswindersingh/marketplace/routes/userroutes.js:59:39
+    at /Users/jaswindersingh/marketplace/routes/userroutes.js:62:7
+    at Layer.handle [as handle_request] (/Users/jaswindersingh/marketplace/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/jaswindersingh/marketplace/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/Users/jaswindersingh/marketplace/node_modules/express/lib/router/route.js:114:3) {
+  code: 'ER_PARSE_ERROR',
+  errno: 1064,
+  sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1",
+  sqlState: '42000',
+  index: 0,
+  sql: 'SELECT * FROM `meetgreetUser` WHERE email='
+}
+info [Mon Jul 25 2022 17:27:22 GMT-0400 (Eastern Daylight Saving Time)]  Error Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+    at Query.Sequence._packetToError (/Users/jaswindersingh/marketplace/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Query.ErrorPacket (/Users/jaswindersingh/marketplace/node_modules/mysql/lib/protocol/sequences/Query.js:79:18)
+    at Protocol._parsePacket (/Users/jaswindersingh/marketplace/node_modules/mysql/lib/protocol/Protocol.js:291:23)
+    at Parser._parsePacket (/Users/jaswindersingh/marketplace/node_modules/mysql/lib/protocol/Parser.js:433:10)
+    at Parser.write (/Users/jaswindersingh/marketplace/node_modules/mysql/lib/protocol/Parser.js:43:10)
+    at Protocol.write (/Users/jaswindersingh/marketplace/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/Users/jaswindersingh/marketplace/node_modules/mysql/lib/Connection.js:88:28)
+    at Socket.<anonymous> (/Users/jaswindersingh/marketplace/node_modules/mysql/lib/Connection.js:526:10)
+    at Socket.emit (node:events:527:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    --------------------
+    at Pool.query (/Users/jaswindersingh/marketplace/node_modules/mysql/lib/Pool.js:199:23)
+    at /Users/jaswindersingh/marketplace/model/Db.js:20:23
+    at new Promise (<anonymous>)
+    at Db.mainQuery (/Users/jaswindersingh/marketplace/model/Db.js:19:16)
+    at meetuser.login (/Users/jaswindersingh/marketplace/controller/meetuser.js:54:33)
+    at /Users/jaswindersingh/marketplace/routes/userroutes.js:59:39
+    at /Users/jaswindersingh/marketplace/routes/userroutes.js:62:7
+    at Layer.handle [as handle_request] (/Users/jaswindersingh/marketplace/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/jaswindersingh/marketplace/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/Users/jaswindersingh/marketplace/node_modules/express/lib/router/route.js:114:3) {
+  code: 'ER_PARSE_ERROR',
+  errno: 1064,
+  sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1",
+  sqlState: '42000',
+  index: 0,
+  sql: 'SELECT * FROM `meetgreetUser` WHERE email='
+}
+info [Mon Jul 25 2022 17:27:24 GMT-0400 (Eastern Daylight Saving Time)]  Error Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+    at Query.Sequence._packetToError (/Users/jaswindersingh/marketplace/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Query.ErrorPacket (/Users/jaswindersingh/marketplace/node_modules/mysql/lib/protocol/sequences/Query.js:79:18)
+    at Protocol._parsePacket (/Users/jaswindersingh/marketplace/node_modules/mysql/lib/protocol/Protocol.js:291:23)
+    at Parser._parsePacket (/Users/jaswindersingh/marketplace/node_modules/mysql/lib/protocol/Parser.js:433:10)
+    at Parser.write (/Users/jaswindersingh/marketplace/node_modules/mysql/lib/protocol/Parser.js:43:10)
+    at Protocol.write (/Users/jaswindersingh/marketplace/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/Users/jaswindersingh/marketplace/node_modules/mysql/lib/Connection.js:88:28)
+    at Socket.<anonymous> (/Users/jaswindersingh/marketplace/node_modules/mysql/lib/Connection.js:526:10)
+    at Socket.emit (node:events:527:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    --------------------
+    at Pool.query (/Users/jaswindersingh/marketplace/node_modules/mysql/lib/Pool.js:199:23)
+    at /Users/jaswindersingh/marketplace/model/Db.js:20:23
+    at new Promise (<anonymous>)
+    at Db.mainQuery (/Users/jaswindersingh/marketplace/model/Db.js:19:16)
+    at meetuser.login (/Users/jaswindersingh/marketplace/controller/meetuser.js:54:33)
+    at /Users/jaswindersingh/marketplace/routes/userroutes.js:59:39
+    at /Users/jaswindersingh/marketplace/routes/userroutes.js:62:7
+    at Layer.handle [as handle_request] (/Users/jaswindersingh/marketplace/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/jaswindersingh/marketplace/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/Users/jaswindersingh/marketplace/node_modules/express/lib/router/route.js:114:3) {
+  code: 'ER_PARSE_ERROR',
+  errno: 1064,
+  sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1",
+  sqlState: '42000',
+  index: 0,
+  sql: 'SELECT * FROM `meetgreetUser` WHERE email='
+}
+info [Mon Jul 25 2022 17:27:28 GMT-0400 (Eastern Daylight Saving Time)]  Error Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+    at Query.Sequence._packetToError (/Users/jaswindersingh/marketplace/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Query.ErrorPacket (/Users/jaswindersingh/marketplace/node_modules/mysql/lib/protocol/sequences/Query.js:79:18)
+    at Protocol._parsePacket (/Users/jaswindersingh/marketplace/node_modules/mysql/lib/protocol/Protocol.js:291:23)
+    at Parser._parsePacket (/Users/jaswindersingh/marketplace/node_modules/mysql/lib/protocol/Parser.js:433:10)
+    at Parser.write (/Users/jaswindersingh/marketplace/node_modules/mysql/lib/protocol/Parser.js:43:10)
+    at Protocol.write (/Users/jaswindersingh/marketplace/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/Users/jaswindersingh/marketplace/node_modules/mysql/lib/Connection.js:88:28)
+    at Socket.<anonymous> (/Users/jaswindersingh/marketplace/node_modules/mysql/lib/Connection.js:526:10)
+    at Socket.emit (node:events:527:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    --------------------
+    at Pool.query (/Users/jaswindersingh/marketplace/node_modules/mysql/lib/Pool.js:199:23)
+    at /Users/jaswindersingh/marketplace/model/Db.js:20:23
+    at new Promise (<anonymous>)
+    at Db.mainQuery (/Users/jaswindersingh/marketplace/model/Db.js:19:16)
+    at meetuser.login (/Users/jaswindersingh/marketplace/controller/meetuser.js:54:33)
+    at /Users/jaswindersingh/marketplace/routes/userroutes.js:59:39
+    at /Users/jaswindersingh/marketplace/routes/userroutes.js:62:7
+    at Layer.handle [as handle_request] (/Users/jaswindersingh/marketplace/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/jaswindersingh/marketplace/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/Users/jaswindersingh/marketplace/node_modules/express/lib/router/route.js:114:3) {
+  code: 'ER_PARSE_ERROR',
+  errno: 1064,
+  sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1",
+  sqlState: '42000',
+  index: 0,
+  sql: 'SELECT * FROM `meetgreetUser` WHERE email='
+}
+info [Mon Jul 25 2022 17:27:28 GMT-0400 (Eastern Daylight Saving Time)]  Error Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+    at Query.Sequence._packetToError (/Users/jaswindersingh/marketplace/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Query.ErrorPacket (/Users/jaswindersingh/marketplace/node_modules/mysql/lib/protocol/sequences/Query.js:79:18)
+    at Protocol._parsePacket (/Users/jaswindersingh/marketplace/node_modules/mysql/lib/protocol/Protocol.js:291:23)
+    at Parser._parsePacket (/Users/jaswindersingh/marketplace/node_modules/mysql/lib/protocol/Parser.js:433:10)
+    at Parser.write (/Users/jaswindersingh/marketplace/node_modules/mysql/lib/protocol/Parser.js:43:10)
+    at Protocol.write (/Users/jaswindersingh/marketplace/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/Users/jaswindersingh/marketplace/node_modules/mysql/lib/Connection.js:88:28)
+    at Socket.<anonymous> (/Users/jaswindersingh/marketplace/node_modules/mysql/lib/Connection.js:526:10)
+    at Socket.emit (node:events:527:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    --------------------
+    at Pool.query (/Users/jaswindersingh/marketplace/node_modules/mysql/lib/Pool.js:199:23)
+    at /Users/jaswindersingh/marketplace/model/Db.js:20:23
+    at new Promise (<anonymous>)
+    at Db.mainQuery (/Users/jaswindersingh/marketplace/model/Db.js:19:16)
+    at meetuser.login (/Users/jaswindersingh/marketplace/controller/meetuser.js:54:33)
+    at /Users/jaswindersingh/marketplace/routes/userroutes.js:59:39
+    at /Users/jaswindersingh/marketplace/routes/userroutes.js:62:7
+    at Layer.handle [as handle_request] (/Users/jaswindersingh/marketplace/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/jaswindersingh/marketplace/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/Users/jaswindersingh/marketplace/node_modules/express/lib/router/route.js:114:3) {
+  code: 'ER_PARSE_ERROR',
+  errno: 1064,
+  sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1",
+  sqlState: '42000',
+  index: 0,
+  sql: 'SELECT * FROM `meetgreetUser` WHERE email='
+}
+info [Mon Jul 25 2022 17:27:50 GMT-0400 (Eastern Daylight Saving Time)]  Error Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+    at Query.Sequence._packetToError (/Users/jaswindersingh/marketplace/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Query.ErrorPacket (/Users/jaswindersingh/marketplace/node_modules/mysql/lib/protocol/sequences/Query.js:79:18)
+    at Protocol._parsePacket (/Users/jaswindersingh/marketplace/node_modules/mysql/lib/protocol/Protocol.js:291:23)
+    at Parser._parsePacket (/Users/jaswindersingh/marketplace/node_modules/mysql/lib/protocol/Parser.js:433:10)
+    at Parser.write (/Users/jaswindersingh/marketplace/node_modules/mysql/lib/protocol/Parser.js:43:10)
+    at Protocol.write (/Users/jaswindersingh/marketplace/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/Users/jaswindersingh/marketplace/node_modules/mysql/lib/Connection.js:88:28)
+    at Socket.<anonymous> (/Users/jaswindersingh/marketplace/node_modules/mysql/lib/Connection.js:526:10)
+    at Socket.emit (node:events:527:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    --------------------
+    at Pool.query (/Users/jaswindersingh/marketplace/node_modules/mysql/lib/Pool.js:199:23)
+    at /Users/jaswindersingh/marketplace/model/Db.js:20:23
+    at new Promise (<anonymous>)
+    at Db.mainQuery (/Users/jaswindersingh/marketplace/model/Db.js:19:16)
+    at meetuser.login (/Users/jaswindersingh/marketplace/controller/meetuser.js:54:33)
+    at /Users/jaswindersingh/marketplace/routes/userroutes.js:59:39
+    at /Users/jaswindersingh/marketplace/routes/userroutes.js:62:7
+    at Layer.handle [as handle_request] (/Users/jaswindersingh/marketplace/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/jaswindersingh/marketplace/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/Users/jaswindersingh/marketplace/node_modules/express/lib/router/route.js:114:3) {
+  code: 'ER_PARSE_ERROR',
+  errno: 1064,
+  sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1",
+  sqlState: '42000',
+  index: 0,
+  sql: 'SELECT * FROM `meetgreetUser` WHERE email='
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+info [Mon Jul 25 2022 18:01:06 GMT-0400 (Eastern Daylight Saving Time)]  Error Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+    at Query.Sequence._packetToError (/Users/jaswindersingh/marketplace/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Query.ErrorPacket (/Users/jaswindersingh/marketplace/node_modules/mysql/lib/protocol/sequences/Query.js:79:18)
+    at Protocol._parsePacket (/Users/jaswindersingh/marketplace/node_modules/mysql/lib/protocol/Protocol.js:291:23)
+    at Parser._parsePacket (/Users/jaswindersingh/marketplace/node_modules/mysql/lib/protocol/Parser.js:433:10)
+    at Parser.write (/Users/jaswindersingh/marketplace/node_modules/mysql/lib/protocol/Parser.js:43:10)
+    at Protocol.write (/Users/jaswindersingh/marketplace/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/Users/jaswindersingh/marketplace/node_modules/mysql/lib/Connection.js:88:28)
+    at Socket.<anonymous> (/Users/jaswindersingh/marketplace/node_modules/mysql/lib/Connection.js:526:10)
+    at Socket.emit (node:events:527:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    --------------------
+    at Pool.query (/Users/jaswindersingh/marketplace/node_modules/mysql/lib/Pool.js:199:23)
+    at /Users/jaswindersingh/marketplace/model/Db.js:20:23
+    at new Promise (<anonymous>)
+    at Db.mainQuery (/Users/jaswindersingh/marketplace/model/Db.js:19:16)
+    at meetuser.login (/Users/jaswindersingh/marketplace/controller/meetuser.js:54:33)
+    at /Users/jaswindersingh/marketplace/routes/userroutes.js:61:47
+    at /Users/jaswindersingh/marketplace/routes/userroutes.js:65:7
+    at Layer.handle [as handle_request] (/Users/jaswindersingh/marketplace/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/jaswindersingh/marketplace/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/Users/jaswindersingh/marketplace/node_modules/express/lib/router/route.js:114:3) {
+  code: 'ER_PARSE_ERROR',
+  errno: 1064,
+  sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1",
+  sqlState: '42000',
+  index: 0,
+  sql: 'SELECT * FROM `meetgreetUser` WHERE email='
+}
+info [Mon Jul 25 2022 18:01:13 GMT-0400 (Eastern Daylight Saving Time)]  Error Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+    at Query.Sequence._packetToError (/Users/jaswindersingh/marketplace/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Query.ErrorPacket (/Users/jaswindersingh/marketplace/node_modules/mysql/lib/protocol/sequences/Query.js:79:18)
+    at Protocol._parsePacket (/Users/jaswindersingh/marketplace/node_modules/mysql/lib/protocol/Protocol.js:291:23)
+    at Parser._parsePacket (/Users/jaswindersingh/marketplace/node_modules/mysql/lib/protocol/Parser.js:433:10)
+    at Parser.write (/Users/jaswindersingh/marketplace/node_modules/mysql/lib/protocol/Parser.js:43:10)
+    at Protocol.write (/Users/jaswindersingh/marketplace/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/Users/jaswindersingh/marketplace/node_modules/mysql/lib/Connection.js:88:28)
+    at Socket.<anonymous> (/Users/jaswindersingh/marketplace/node_modules/mysql/lib/Connection.js:526:10)
+    at Socket.emit (node:events:527:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    --------------------
+    at Pool.query (/Users/jaswindersingh/marketplace/node_modules/mysql/lib/Pool.js:199:23)
+    at /Users/jaswindersingh/marketplace/model/Db.js:20:23
+    at new Promise (<anonymous>)
+    at Db.mainQuery (/Users/jaswindersingh/marketplace/model/Db.js:19:16)
+    at meetuser.login (/Users/jaswindersingh/marketplace/controller/meetuser.js:54:33)
+    at /Users/jaswindersingh/marketplace/routes/userroutes.js:61:47
+    at /Users/jaswindersingh/marketplace/routes/userroutes.js:65:7
+    at Layer.handle [as handle_request] (/Users/jaswindersingh/marketplace/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/jaswindersingh/marketplace/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/Users/jaswindersingh/marketplace/node_modules/express/lib/router/route.js:114:3) {
+  code: 'ER_PARSE_ERROR',
+  errno: 1064,
+  sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1",
+  sqlState: '42000',
+  index: 0,
+  sql: 'SELECT * FROM `meetgreetUser` WHERE email='
+}
+
+
